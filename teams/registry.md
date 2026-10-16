@@ -173,5 +173,6 @@ The manager reviews every worker's output. Delegation never transfers the user's
 | Onboarding lead | Fill decision-relevant gaps one question at a time | `onboard-cofounder` |
 | Measurement lead | Define decision-useful outcome, leading, input, and guardrail metrics | `design-goal-metrics` |
 | Strategy librarian | Retrieve the smallest useful playbook set and produce an execution brief | `select-business-playbook` |
+| Motion designer | Turn a topic, message, CTA and platform into an approved, verified motion-graphic video | `motion-graphic` |
 
 Do not create teams, roles, or meetings for performative activity.
