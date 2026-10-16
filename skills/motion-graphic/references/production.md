@@ -65,11 +65,11 @@ Check: duration within ±1s of plan, resolution/ratio match, 30fps, audio stream
 
 ## Host compatibility
 
-The skill is host-neutral. Paths: canonical source `skills/motion-graphik/`; Claude Code discovers it via `.claude/skills/motion-graphik`, Codex via `.agents/skills/motion-graphik` (both symlinks).
+The skill is host-neutral. Paths: canonical source `skills/motion-graphic/`; Claude Code discovers it via `.claude/skills/motion-graphic`, Codex via `.agents/skills/motion-graphic` (both symlinks).
 
 | Concern | Claude Code | Codex |
 |---|---|---|
-| Invoke | `/motion-graphik` or automatic by description | `$motion-graphik` or automatic by description |
+| Invoke | `/motion-graphic` or automatic by description | `$motion-graphic` or automatic by description |
 | Asking the user | `AskUserQuestion` if available, else a chat message | Chat message, then end the turn |
 | Showing keyframes / video | Send the files (e.g. `SendUserFile`) or view them with `Read` | Give absolute paths; inspect images with the image-view tool if available |
 | Network (npm, pip, TTS, fonts) | Governed by the environment's network policy | Sandbox may block network — request approval/escalation for installs, or ask the user to run them |

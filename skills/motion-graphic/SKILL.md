@@ -1,9 +1,9 @@
 ---
-name: motion-graphik
-description: Turn a topic, core message, CTA and target platform into a motion-graphic video. Recommends 3 fitting visual styles with effects and Hebrew rationale, asks for platform/aspect ratio when missing, renders real keyframes plus a voiceover script for approval, and only then renders the full video. Use when the user asks for a motion graphic, animated video, reel/short from a topic or images, "מושן גרפיק", "סרטון אנימציה", or invokes /motion-graphik (Claude Code) or $motion-graphik (Codex).
+name: motion-graphic
+description: Turn a topic, core message, CTA and target platform into a motion-graphic video. Recommends 3 fitting visual styles with effects and Hebrew rationale, asks for platform/aspect ratio when missing, renders real keyframes plus a voiceover script for approval, and only then renders the full video. Use when the user asks for a motion graphic, animated video, reel/short from a topic or images, "מושן גרפיק", "סרטון אנימציה", or invokes /motion-graphic (Claude Code) or $motion-graphic (Codex).
 ---
 
-# Motion Graphik
+# Motion Graphic
 
 A generic capability skill, not a named worker. Talk to the user in Hebrew (RTL); keep code and render prompts in English.
 
