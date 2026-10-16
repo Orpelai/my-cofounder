@@ -52,7 +52,7 @@ After explicit approval:
 
 1. Render the full video with the approved composition, voiceover audio (if chosen) and burned-in captions.
 2. Verify per [production](references/production.md#verification): file plays, duration, resolution, fps, audio stream present, Hebrew renders correctly, nothing inside platform UI safe zones. Extract 3 frames from the final file and inspect them.
-3. Save under `assets/generated/<YYYY>/<YYYY-MM-DD>-<topic-slug>/` with a `.metadata.md` sidecar per `assets/README.md`. Keep composition source code outside `assets/`.
+3. Save the final file per [delivery](references/production.md#delivery): follow the current project's asset rules if it has them (e.g. `assets/README.md`), otherwise `./motion-graphic-output/<YYYY-MM-DD>-<topic-slug>/`.
 4. Deliver the video (send/attach it if the host can; otherwise give the absolute path) and report: path, duration, resolution, style, what was verified, and known limitations. Offer one targeted improvement, not a list.
 
 Never claim the video is done without having inspected frames from the final file.

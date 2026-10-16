@@ -32,7 +32,7 @@ All animation must be **frame-deterministic** (derived from the frame number, no
 - Render one still per scene from the real composition at its most representative frame, at full resolution.
 - Build a contact sheet (e.g. `ffmpeg` tile or a simple grid) labeled by scene number and timestamp.
 - Overlay the platform safe-zone guides on a copy of the contact sheet so the user can see UI collisions.
-- Keyframes and the storyboard are working files: keep them in the scratchpad (or project working folder), not under `assets/`, until approved.
+- Keyframes and the storyboard are working files: keep them in a scratch/temp folder (or the composition project folder), not in the project's asset store, until approved.
 
 ## Voiceover
 
@@ -59,13 +59,14 @@ Check: duration within ±1s of plan, resolution/ratio match, 30fps, audio stream
 
 ## Delivery
 
-- Final file: `assets/generated/<YYYY>/<YYYY-MM-DD>-<topic-slug>/<topic-slug>-<ratio>.mp4` plus `<filename>.metadata.md` per `assets/README.md` (payload is git-ignored; the sidecar is tracked).
-- Composition source: a normal project folder outside `assets/` (or the scratchpad for one-offs). Do not commit `node_modules` or renders.
+- If the current project defines asset rules (e.g. an `assets/README.md`), follow them. In the AI Co-Founder starter that means `assets/generated/<YYYY>/<YYYY-MM-DD>-<topic-slug>/<topic-slug>-<ratio>.mp4` plus a `<filename>.metadata.md` sidecar.
+- Otherwise save to `./motion-graphic-output/<YYYY-MM-DD>-<topic-slug>/<topic-slug>-<ratio>.mp4`, and ask before writing outside the current working directory.
+- Composition source: its own folder, separate from the final renders. Never commit `node_modules` or rendered video to Git unless the user asks.
 - Deliver the video (send/attach where the host supports it) and always give the absolute path.
 
 ## Host compatibility
 
-The skill is host-neutral. Paths: canonical source `skills/motion-graphic/`; Claude Code discovers it via `.claude/skills/motion-graphic`, Codex via `.agents/skills/motion-graphic` (both symlinks).
+The skill is host-neutral. Install locations: Claude Code — `~/.claude/skills/motion-graphic/` (global) or `.claude/skills/motion-graphic/` (project); Codex — `~/.agents/skills/motion-graphic/` (global) or `.agents/skills/motion-graphic/` (project); claude.ai — upload as a personal skill.
 
 | Concern | Claude Code | Codex |
 |---|---|---|
